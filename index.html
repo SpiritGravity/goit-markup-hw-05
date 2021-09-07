@@ -20,10 +20,10 @@
                 <nav class="header-navigation"> 
                     <ul class="header-list list">
                         <li class="header-item">
-                            <a class="header-link link" href="">Студия</a>
+                            <a class="header-link current link" href="">Студия</a>
                         </li>
                         <li class="header-item">
-                            <a class="header-link link" href="./portfolio.html"  rel="noreferrer noopener">Портфолио</a>
+                            <a class="header-link  link" href="./portfolio.html"  rel="noreferrer noopener">Портфолио</a>
                         </li>
                         <li class="header-item">
                             <a class="header-link link" href="">Контакты</a> 
@@ -57,7 +57,7 @@
             <section class="hero">
                 <div class="container">
                 <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-button">Заказать услугу</button>
+                <button class="hero-button" data-modal-open >Заказать услугу</button>
                 </div>
             </section>
             <!----------------------Features------------------>
@@ -109,13 +109,28 @@
            <h2 class="what-we-do-title">Чем мы занимаемся</h2>
            <ul class="what-we-do list">
                 <li class="what-we-do-link">
-                   <img src="./images/box1.jpg" alt="Разработка ПО" width="370"/>
+                    <div class="what-we-do-box">
+                    <img src="./images/box1.jpg" alt="Разработка ПО" width="370"/>
+                    <div class="what-we-do-text">
+                        <p class="what-we-do-item">Десктопные приложения</p>
+                    </div>
+                    </div>
                 </li>
                 <li class="what-we-do-link">
+                    <div class="what-we-do-box">
                     <img src="./images/box2.jpg" alt="Создание макета для смартфона" width="370"/>
+                    <div class="what-we-do-text">
+                        <p class="what-we-do-item">Мобильные приложения</p>
+                    </div>
+                    </div>
                 </li>
                 <li class="what-we-do-link">
+                    <div class="what-we-do-box">
                     <img src="./images/box3.jpg" alt="Дизайн" width="370"/>
+                    <div class="what-we-do-text">
+                        <p class="what-we-do-item">Дизайнерские решения</p>
+                    </div>
+                    </div>
                 </li>
            </ul>
                 </div>
@@ -381,8 +396,15 @@
             </div>
         </div>
         </footer>  
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="btn-close" data-modal-close>
+                <svg class="backdrop-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-close"/>
+                </svg> 
+            </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
         </body>
 </html>
-
-
-
